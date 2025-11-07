@@ -49,6 +49,16 @@
             <version>5.5.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>backport-util-concurrent</groupId>
+            <artifactId>backport-util-concurrent</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.icu</groupId>
+            <artifactId>icu4j</artifactId>
+            <version>70.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -60,6 +70,8 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
+                    <release>21</release>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>
