@@ -1,5 +1,6 @@
 package org.example.sdk.client;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.concurrent.TimeUnit;
@@ -17,7 +18,7 @@ import org.example.sdk.model.WeatherResponse;
 import java.io.IOException;
 
 
-public class WeatherApiClient {
+public class WeatherApiClient implements ApiClient{
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
     private static final int TIMEOUT_SECONDS = 10;
 
@@ -32,7 +33,8 @@ public class WeatherApiClient {
                 .readTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
                 .writeTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
                 .build();
-        this.objectMapper = new ObjectMapper();
+        this.objectMapper = new ObjectMapper()
+        .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
     public WeatherResponse getWeatherByCity(String cityName) throws WeatherSDKException {
@@ -58,10 +60,20 @@ public class WeatherApiClient {
                     throw new APIException("Пустой ответ от API", response.code());
                 }
 
-                OpenWeatherMapResponse apiResponse = objectMapper.readValue(
-                        responseBody,
-                        OpenWeatherMapResponse.class
-                );
+                OpenWeatherMapResponse apiResponse;
+                try {
+                    apiResponse = objectMapper.readValue(
+                            responseBody,
+                            OpenWeatherMapResponse.class
+                    );
+                } catch (com.fasterxml.jackson.databind.JsonMappingException e) {
+                    throw new APIException(
+                            "Ошибка при парсинге ответа от API. Возможно, формат ответа изменился. " +
+                                    "Детали: " + e.getMessage(),
+                            0,
+                            e
+                    );
+                }
 
                 return convertToWeatherResponse(apiResponse);
             }

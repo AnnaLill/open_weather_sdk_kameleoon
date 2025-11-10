@@ -1,9 +1,11 @@
 package org.example.sdk.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class OpenWeatherMapResponse {
     @JsonProperty("weather")
     private List<WeatherData> weather;
@@ -29,6 +31,7 @@ public class OpenWeatherMapResponse {
     @JsonProperty("name")
     private String name;
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class WeatherData {
         @JsonProperty("main")
         private String main;
@@ -53,6 +56,7 @@ public class OpenWeatherMapResponse {
         }
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class MainData {
         @JsonProperty("temp")
         private Double temp;
@@ -77,6 +81,7 @@ public class OpenWeatherMapResponse {
         }
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class WindData {
         @JsonProperty("speed")
         private Double speed;
@@ -90,6 +95,7 @@ public class OpenWeatherMapResponse {
         }
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class SysData {
         @JsonProperty("sunrise")
         private Long sunrise;

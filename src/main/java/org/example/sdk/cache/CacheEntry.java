@@ -22,7 +22,6 @@ public class CacheEntry {
     public boolean isValid() {
         long currentTime = System.currentTimeMillis();
         long age = currentTime - timestamp;
-        // 10 минут = 600000 миллисекунд
         return age < 600000;
     }
 }

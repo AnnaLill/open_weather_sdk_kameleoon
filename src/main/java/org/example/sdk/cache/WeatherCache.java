@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class WeatherCache implements Cache {
         private static final int MAX_SIZE = 10;
-        private static final long CACHE_TTL_MS = 600000; // 10 минут в миллисекундах
+        private static final long CACHE_TTL_MS = 600000;
 
         private final Map<String, CacheEntry> cache;
 

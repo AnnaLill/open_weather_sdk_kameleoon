@@ -1,28 +1,19 @@
-package org.example;
+package org.example.sdk.examples;
+
 
 import org.example.sdk.Mode;
 import org.example.sdk.OpenWeatherSDK;
 import org.example.sdk.exception.WeatherSDKException;
 import org.example.sdk.model.WeatherResponse;
 
-
-public class Main {
+public class BasicUsageExample {
     public static void main(String[] args) {
-        // Замените на ваш API ключ
         String apiKey = "YOUR_API_KEY";
 
-        if ("YOUR_API_KEY_HERE".equals(apiKey)) {
-            System.out.println("⚠️  ВНИМАНИЕ: Замените YOUR_API_KEY на ваш реальный API ключ!");
-            System.out.println("Получить API ключ можно на: https://openweathermap.org/api");
-            return;
-        }
-
         try {
-            System.out.println("=== Инициализация SDK ===");
             OpenWeatherSDK sdk = OpenWeatherSDK.getInstance(apiKey, Mode.ON_DEMAND);
-            System.out.println("SDK инициализирован в режиме: " + sdk.getMode());
 
-            System.out.println("\n=== Получение погоды для Москвы ===");
+            System.out.println("=== Получение погоды для Москвы ===");
             WeatherResponse weather = sdk.getWeather("Moscow");
 
             System.out.println("Город: " + weather.getName());
@@ -33,12 +24,10 @@ public class Main {
             System.out.println("Скорость ветра: " + weather.getWind().getSpeed() + " м/с");
             System.out.println("Видимость: " + weather.getVisibility() + " м");
 
-            System.out.println("\n=== Демонстрация кэширования ===");
-            System.out.println("Повторный запрос (данные из кэша):");
+            System.out.println("\n=== Повторный запрос (из кэша) ===");
             WeatherResponse cachedWeather = sdk.getWeather("Moscow");
             System.out.println("Город: " + cachedWeather.getName());
             System.out.println("Температура: " + cachedWeather.getTemperature().getTemp() + "°C");
-            System.out.println("Городов в кэше: " + sdk.getCacheSize());
 
         } catch (WeatherSDKException e) {
             System.err.println("Ошибка при получении погоды: " + e.getMessage());
