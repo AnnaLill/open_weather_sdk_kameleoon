@@ -2,6 +2,14 @@ package org.example.sdk.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Weather response model representing the standardized JSON structure returned by the SDK.
+ * <p>
+ * This class represents the weather data in the format specified by the SDK requirements.
+ * It contains information about weather conditions, temperature, wind, visibility, and
+ * system information (sunrise/sunset).
+ * </p>
+ */
 public class WeatherResponse {
     @JsonProperty("weather")
     private WeatherInfo weather;

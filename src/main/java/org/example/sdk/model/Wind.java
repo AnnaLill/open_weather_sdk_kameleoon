@@ -2,6 +2,9 @@ package org.example.sdk.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Wind information model containing wind speed.
+ */
 public class Wind {
     @JsonProperty("speed")
     private Double speed;

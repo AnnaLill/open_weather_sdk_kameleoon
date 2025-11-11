@@ -2,6 +2,9 @@ package org.example.sdk.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Weather information model containing main weather condition and description.
+ */
 public class WeatherInfo {
     @JsonProperty("main")
     private String main;

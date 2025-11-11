@@ -2,6 +2,9 @@ package org.example.sdk.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * System information model containing sunrise and sunset times.
+ */
 public class Sys {
     @JsonProperty("sunrise")
     private Long sunrise;

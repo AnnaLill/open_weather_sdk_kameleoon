@@ -2,6 +2,9 @@ package org.example.sdk.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Temperature model containing actual temperature and "feels like" temperature.
+ */
 public class Temperature {
 
         @JsonProperty("temp")
