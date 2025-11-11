@@ -1,26 +1,0 @@
-
-‘
-java:S1192%"IDefine a constant instead of duplicating this literal "temp_key" 3 times.(¸±²ëûÿÿÿÿ8éÿŸ„§3J$ad572576-c957-49a4-bbd0-188f95519760
-€
-java:S1854"8Remove this useless assignment to local variable "sdk5".(şùˆìşÿÿÿÿ8ÿÿŸ„§3J$eea3f18b-3311-4481-a137-1fdd2c73aa1a
-€
-java:S1854+"8Remove this useless assignment to local variable "sdk7".(•æĞÿÿÿÿÿ8ÿÿŸ„§3J$eb12f67b-52c5-4340-91c5-7cef469923c9
-m	java:S106"+Replace this use of System.out by a logger.(Ì¡¸ù8‚€ „§3J$f5a140ff-2852-49f2-8ef0-cfd517c6b00b
-l	java:S106"+Replace this use of System.out by a logger.(çõøY8…€ „§3J$00cc2a96-63e0-40cf-b6e2-739366344edd
-r	java:S106"+Replace this use of System.out by a logger.(¨©éÓúÿÿÿÿ8‡€ „§3J$0927a45c-8f68-463f-bf64-095344a57729
-m	java:S106"+Replace this use of System.out by a logger.(®â”Ñ8‡€ „§3J$ecb608d2-de28-4007-91e6-8ff0546acf65
-r	java:S106"+Replace this use of System.out by a logger.(¾»¾şÿÿÿÿ8‰€ „§3J$93a512c8-d58b-443b-9441-2112398429ad
-r	java:S106"+Replace this use of System.out by a logger.(€Š—Ëùÿÿÿÿ8Š€ „§3J$e479d266-72b0-46c7-9132-160194a5756a
-m	java:S106"+Replace this use of System.out by a logger.(™®¿ş8Š€ „§3J$cc56bcc6-fffe-4d60-8eb9-ecb6236888b9
-q
-java:S1481")Remove this unused "sdk5" local variable.(şùˆìşÿÿÿÿ8Œ€ „§3J$c6ada738-8089-46f7-b6db-8e48ce80fc8e
-m	java:S106 "+Replace this use of System.err by a logger.(˜ŸÚá8€ „§3J$e963aa1f-b0ae-4cdb-bff2-d458e09e395f
-r	java:S106!"+Replace this use of System.err by a logger.(‰½³’ûÿÿÿÿ8€ „§3J$e6a05e61-9518-4994-be0a-54ace35316e1
-r	java:S106$"+Replace this use of System.out by a logger.(Œ¥¶Ÿşÿÿÿÿ8€ „§3J$82a19265-ff83-46e0-8c6c-da3ed9d1fabb
-r	java:S106&"+Replace this use of System.out by a logger.(Í‹·æûÿÿÿÿ8€ „§3J$6554ba29-3357-4228-8c41-90458b50574d
-r	java:S106)"+Replace this use of System.out by a logger.(ÏÀæùÿÿÿÿ8€ „§3J$a73c0a58-b2d3-40ea-a605-54833e20efa9
-q
-java:S1481+")Remove this unused "sdk7" local variable.(•æĞÿÿÿÿÿ8€ „§3J$66a94792-c37e-4acc-850f-bb48f1a49ab2
-r	java:S106,"+Replace this use of System.out by a logger.(£‚ğ‰ıÿÿÿÿ8‘€ „§3J$b0f5fd2a-a522-41ef-a17b-7ffbb56339a2
-m	java:S106."+Replace this use of System.out by a logger.(©¬·8‘€ „§3J$37696ebe-7916-4f00-bc16-5fc5dc07267c
-r	java:S1060"+Replace this use of System.out by a logger.(¨íå¸øÿÿÿÿ8’€ „§3J$0eed5880-051f-4c04-bb7b-d14e763ed1ee
