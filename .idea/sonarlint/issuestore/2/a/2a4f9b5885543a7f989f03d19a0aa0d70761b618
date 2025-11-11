@@ -1,0 +1,32 @@
+
+}
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ñ‹°ƒ§3J$0ada73fe-e9df-41cd-aa78-cc5f8b86ad11
+}
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ñ‹°ƒ§3J$d7a0867d-5ab9-469a-aac5-723e6c8456ce
+}
+java:S1141""5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ñ‹°ƒ§3J$e64458ef-8ff8-499a-bb4d-25dcad5150c6
+}
+java:S1141)"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ñ‹°ƒ§3J$89d56525-4f39-40e7-9017-4ff53592723f
+ƒ
+java:S1854";Remove this useless assignment to local variable "weather".(Ñ¹Úôùÿÿÿÿ8ƒŒ°ƒ§3J$ad7a126d-5b8e-422c-a5e2-d475d5f2e7ac
+}
+java:S1854";Remove this useless assignment to local variable "weather".(ê©±n8ƒŒ°ƒ§3J$9c5de47e-ecf7-4638-b53f-1734b90dd04d
+~
+java:S1854#";Remove this useless assignment to local variable "weather".(û·Øã8ƒŒ°ƒ§3J$35357dcb-e61c-4914-ba9e-f4df23b64115
+m	java:S106"+Replace this use of System.out by a logger.(©ÓÝó8ƒŒ°ƒ§3J$c988b4a0-9543-4689-bd79-191e6ab120b1
+t
+java:S1481",Remove this unused "weather" local variable.(Ñ¹Úôùÿÿÿÿ8…Œ°ƒ§3J$e23a84c5-79aa-4737-b842-2fb0a826ade0
+r	java:S106"+Replace this use of System.err by a logger.(™û–¿ûÿÿÿÿ8†Œ°ƒ§3J$b0864334-87d8-4b0c-8ee8-9de618c73fd7
+r	java:S106"+Replace this use of System.out by a logger.(Òå¥Üþÿÿÿÿ8†Œ°ƒ§3J$9649c2e2-3828-4aad-8f49-ff518bfa3f29
+n
+java:S1481",Remove this unused "weather" local variable.(ê©±n8ˆŒ°ƒ§3J$bac15b52-b9d1-4f4d-a2de-33dbbba8db37
+m	java:S106"+Replace this use of System.err by a logger.(È€Ò¶8ˆŒ°ƒ§3J$020527f0-35c0-4d05-b67f-947b67475a29
+r	java:S106"+Replace this use of System.err by a logger.(îèôàýÿÿÿÿ8ˆŒ°ƒ§3J$7d5f35dc-7b25-4fbf-a28d-78976287925b
+m	java:S106!"+Replace this use of System.out by a logger.(þÉ·Ÿ8ˆŒ°ƒ§3J$0798808e-2b7a-45f3-ad42-90ac2dde99b3
+o
+java:S1481#",Remove this unused "weather" local variable.(û·Øã8‰Œ°ƒ§3J$a4ef0b8f-aed7-45e5-85d4-8865f8b9ef2e
+m	java:S106%"+Replace this use of System.err by a logger.(˜ŸÚá8‰Œ°ƒ§3J$85cf4b8d-5673-49ae-8aff-4ddcee4f3747
+r	java:S106("+Replace this use of System.out by a logger.(à€ªÐûÿÿÿÿ8‰Œ°ƒ§3J$2ba46131-ee3e-48b9-89f9-533f438a9662
+r	java:S106+"+Replace this use of System.out by a logger.(ãùÄÊüÿÿÿÿ8‰Œ°ƒ§3J$4ddc6ac7-11a0-49ac-8335-c48e770fcccb
+m	java:S106-"+Replace this use of System.err by a logger.(˜ŸÚá8ŠŒ°ƒ§3J$3946a229-c724-4786-b892-2a34757034f1
+m	java:S1061"+Replace this use of System.err by a logger.(±Ä°é8ŠŒ°ƒ§3J$71bc5eaf-f867-48cc-80d4-5123412fea09
